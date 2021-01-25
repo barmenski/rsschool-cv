@@ -24,7 +24,7 @@ return Math.min.apply(null, lengthArray);
 *2007-2012:* Brest State Technical University.
 *Specialization:* "Examination and Management of Immovable Property"
 *2020:* Erasmus+. *Course:* "English. Pre-intermediate"
-*2020:* www.freecodecamp.org. *Course:* "JavaScript Algorithms and Data Structures Certification"
+
 
 **LANGUAGES**
 English (A2)
