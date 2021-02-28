@@ -1,26 +1,87 @@
+@font-face {
+  font-family: "Ruda";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/ruda-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/ruda-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "Antic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/antic-v12-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/antic-v12-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/antic-v12-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/antic-v12-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/antic-v12-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/antic-v12-latin-regular.svg#Antic")
+      format("svg"); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/mukta-v7-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/mukta-v7-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  font-family: "Mukta", Courier, monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+a:active,
+a:hover,
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 h1 {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 35px;
+  font-family: "Ruda", Courier, monospace;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 70px;
 }
 
 h2 {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 20px;
+  font-family: "Ruda", Courier, monospace;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  border-bottom: #666666 solid 2px;
 }
 
 header {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
+  background-color: #666666;
 }
 
 header h1 {
-  margin-left: 150px;
+  margin-left: 80px;
 }
 
 ul {
   padding-left: 5px;
   list-style-type: none;
+}
+
+.avatar {
+  max-height: 240px;
 }
 
 .avatar img {
@@ -34,4 +95,31 @@ ul {
   flex-direction: column;
   max-width: 1000px;
   width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 50px;
+  padding: 3px 3px;
+  color: white;
+  background-color: #666666;
+}
+
+footer a {
+  text-align: center;
+  color: white;
+}
+
+.footer-link,
+.footer-year {
+  padding-top: 7px;
+  height: 30px;
+}
+
+.footer_logo-pic {
+  max-width: 200px;
+  height: 50px;
+  display: block;
 }
